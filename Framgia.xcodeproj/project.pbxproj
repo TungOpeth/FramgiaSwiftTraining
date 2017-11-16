@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3671FBC33270090C235 /* AppDelegate.swift */; };
+		095AC36A1FBC33270090C235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3691FBC33270090C235 /* ViewController.swift */; };
+		095AC36D1FBC33270090C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095AC36B1FBC33270090C235 /* Main.storyboard */; };
+		095AC36F1FBC33270090C235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095AC36E1FBC33270090C235 /* Assets.xcassets */; };
+		095AC3721FBC33270090C235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095AC3701FBC33270090C235 /* LaunchScreen.storyboard */; };
+		095AC3801FBC37440090C235 /* add_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 095AC37A1FBC37440090C235 /* add_photo@2x.png */; };
+		095AC3811FBC37440090C235 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 095AC37B1FBC37440090C235 /* bg@2x.png */; };
+		095AC3821FBC37440090C235 /* login_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 095AC37C1FBC37440090C235 /* login_button@2x.png */; };
+		095AC3841FBC37440090C235 /* textfield_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 095AC37F1FBC37440090C235 /* textfield_bg@2x.png */; };
+		095AC3881FBD1A8E0090C235 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3871FBD1A8D0090C235 /* RegisterViewController.swift */; };
+		095AC38C1FBD3A210090C235 /* FormValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC38B1FBD3A210090C235 /* FormValidationModel.swift */; };
+		095AC38E1FBD40E10090C235 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC38D1FBD40E10090C235 /* ValidationError.swift */; };
+		095AC3901FBD423D0090C235 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC38F1FBD423D0090C235 /* ValidationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		095AC3641FBC33270090C235 /* Framgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		095AC3671FBC33270090C235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		095AC3691FBC33270090C235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		095AC36C1FBC33270090C235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		095AC36E1FBC33270090C235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		095AC3711FBC33270090C235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		095AC3731FBC33270090C235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095AC37A1FBC37440090C235 /* add_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_photo@2x.png"; sourceTree = "<group>"; };
+		095AC37B1FBC37440090C235 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		095AC37C1FBC37440090C235 /* login_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_button@2x.png"; sourceTree = "<group>"; };
+		095AC37F1FBC37440090C235 /* textfield_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield_bg@2x.png"; sourceTree = "<group>"; };
+		095AC3871FBD1A8D0090C235 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		095AC38B1FBD3A210090C235 /* FormValidationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidationModel.swift; sourceTree = "<group>"; };
+		095AC38D1FBD40E10090C235 /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		095AC38F1FBD423D0090C235 /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		095AC3611FBC33270090C235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095AC35B1FBC33270090C235 = {
+			isa = PBXGroup;
+			children = (
+				095AC3661FBC33270090C235 /* Framgia */,
+				095AC3651FBC33270090C235 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		095AC3651FBC33270090C235 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				095AC3641FBC33270090C235 /* Framgia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		095AC3661FBC33270090C235 /* Framgia */ = {
+			isa = PBXGroup;
+			children = (
+				095AC3791FBC37440090C235 /* resource */,
+				095AC3671FBC33270090C235 /* AppDelegate.swift */,
+				095AC3691FBC33270090C235 /* ViewController.swift */,
+				095AC36B1FBC33270090C235 /* Main.storyboard */,
+				095AC36E1FBC33270090C235 /* Assets.xcassets */,
+				095AC3701FBC33270090C235 /* LaunchScreen.storyboard */,
+				095AC3731FBC33270090C235 /* Info.plist */,
+				095AC3871FBD1A8D0090C235 /* RegisterViewController.swift */,
+				095AC38B1FBD3A210090C235 /* FormValidationModel.swift */,
+				095AC38D1FBD40E10090C235 /* ValidationError.swift */,
+				095AC38F1FBD423D0090C235 /* ValidationManager.swift */,
+			);
+			path = Framgia;
+			sourceTree = "<group>";
+		};
+		095AC3791FBC37440090C235 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				095AC37A1FBC37440090C235 /* add_photo@2x.png */,
+				095AC37B1FBC37440090C235 /* bg@2x.png */,
+				095AC37C1FBC37440090C235 /* login_button@2x.png */,
+				095AC37F1FBC37440090C235 /* textfield_bg@2x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		095AC3631FBC33270090C235 /* Framgia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095AC3761FBC33270090C235 /* Build configuration list for PBXNativeTarget "Framgia" */;
+			buildPhases = (
+				095AC3601FBC33270090C235 /* Sources */,
+				095AC3611FBC33270090C235 /* Frameworks */,
+				095AC3621FBC33270090C235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Framgia;
+			productName = Framgia;
+			productReference = 095AC3641FBC33270090C235 /* Framgia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		095AC35C1FBC33270090C235 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Framgia;
+				TargetAttributes = {
+					095AC3631FBC33270090C235 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 095AC35F1FBC33270090C235 /* Build configuration list for PBXProject "Framgia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 095AC35B1FBC33270090C235;
+			productRefGroup = 095AC3651FBC33270090C235 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				095AC3631FBC33270090C235 /* Framgia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		095AC3621FBC33270090C235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095AC3721FBC33270090C235 /* LaunchScreen.storyboard in Resources */,
+				095AC36F1FBC33270090C235 /* Assets.xcassets in Resources */,
+				095AC3841FBC37440090C235 /* textfield_bg@2x.png in Resources */,
+				095AC3821FBC37440090C235 /* login_button@2x.png in Resources */,
+				095AC36D1FBC33270090C235 /* Main.storyboard in Resources */,
+				095AC3801FBC37440090C235 /* add_photo@2x.png in Resources */,
+				095AC3811FBC37440090C235 /* bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		095AC3601FBC33270090C235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095AC3901FBD423D0090C235 /* ValidationManager.swift in Sources */,
+				095AC38C1FBD3A210090C235 /* FormValidationModel.swift in Sources */,
+				095AC38E1FBD40E10090C235 /* ValidationError.swift in Sources */,
+				095AC3881FBD1A8E0090C235 /* RegisterViewController.swift in Sources */,
+				095AC36A1FBC33270090C235 /* ViewController.swift in Sources */,
+				095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		095AC36B1FBC33270090C235 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095AC36C1FBC33270090C235 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		095AC3701FBC33270090C235 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095AC3711FBC33270090C235 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		095AC3741FBC33270090C235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		095AC3751FBC33270090C235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		095AC3771FBC33270090C235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Framgia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.Framgia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		095AC3781FBC33270090C235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Framgia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.Framgia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		095AC35F1FBC33270090C235 /* Build configuration list for PBXProject "Framgia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095AC3741FBC33270090C235 /* Debug */,
+				095AC3751FBC33270090C235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095AC3761FBC33270090C235 /* Build configuration list for PBXNativeTarget "Framgia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095AC3771FBC33270090C235 /* Debug */,
+				095AC3781FBC33270090C235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 095AC35C1FBC33270090C235 /* Project object */;
+}
