@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */; };
 		095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3671FBC33270090C235 /* AppDelegate.swift */; };
 		095AC36A1FBC33270090C235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3691FBC33270090C235 /* ViewController.swift */; };
 		095AC36D1FBC33270090C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095AC36B1FBC33270090C235 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		095AC3641FBC33270090C235 /* Framgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095AC3671FBC33270090C235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		095AC3691FBC33270090C235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				095AC38B1FBD3A210090C235 /* FormValidationModel.swift */,
 				095AC38D1FBD40E10090C235 /* ValidationError.swift */,
 				095AC38F1FBD423D0090C235 /* ValidationManager.swift */,
+				091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */,
 			);
 			path = Framgia;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				095AC38C1FBD3A210090C235 /* FormValidationModel.swift in Sources */,
 				095AC38E1FBD40E10090C235 /* ValidationError.swift in Sources */,
 				095AC3881FBD1A8E0090C235 /* RegisterViewController.swift in Sources */,
+				091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */,
 				095AC36A1FBC33270090C235 /* ViewController.swift in Sources */,
 				095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */,
 			);
@@ -337,6 +341,7 @@
 				095AC3781FBC33270090C235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
