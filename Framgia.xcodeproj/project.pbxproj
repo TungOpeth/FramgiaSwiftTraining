@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0913DC561FC5369D0008DB26 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913DC551FC5369D0008DB26 /* HomeViewController.swift */; };
+		0914F8E61FC271DF00E99D4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914F8E51FC271DF00E99D4A /* LoginViewController.swift */; };
+		0914F8E91FC278F700E99D4A /* UserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914F8E81FC278F700E99D4A /* UserHelper.swift */; };
+		0914F8F01FC28F5D00E99D4A /* ServerFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914F8EF1FC28F5D00E99D4A /* ServerFake.swift */; };
 		091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */; };
 		095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3671FBC33270090C235 /* AppDelegate.swift */; };
 		095AC36A1FBC33270090C235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3691FBC33270090C235 /* ViewController.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0913DC551FC5369D0008DB26 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0914F8E51FC271DF00E99D4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0914F8E81FC278F700E99D4A /* UserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHelper.swift; sourceTree = "<group>"; };
+		0914F8EF1FC28F5D00E99D4A /* ServerFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerFake.swift; sourceTree = "<group>"; };
 		091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		095AC3641FBC33270090C235 /* Framgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095AC3671FBC33270090C235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0914F8E71FC278B600E99D4A /* UserHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0914F8EF1FC28F5D00E99D4A /* ServerFake.swift */,
+				0914F8E81FC278F700E99D4A /* UserHelper.swift */,
+			);
+			name = UserHelper;
+			sourceTree = "<group>";
+		};
 		095AC35B1FBC33270090C235 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +89,7 @@
 		095AC3661FBC33270090C235 /* Framgia */ = {
 			isa = PBXGroup;
 			children = (
+				0914F8E71FC278B600E99D4A /* UserHelper */,
 				095AC3791FBC37440090C235 /* resource */,
 				095AC3671FBC33270090C235 /* AppDelegate.swift */,
 				095AC3691FBC33270090C235 /* ViewController.swift */,
@@ -84,6 +102,8 @@
 				095AC38D1FBD40E10090C235 /* ValidationError.swift */,
 				095AC38F1FBD423D0090C235 /* ValidationManager.swift */,
 				091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */,
+				0914F8E51FC271DF00E99D4A /* LoginViewController.swift */,
+				0913DC551FC5369D0008DB26 /* HomeViewController.swift */,
 			);
 			path = Framgia;
 			sourceTree = "<group>";
@@ -176,9 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				095AC3901FBD423D0090C235 /* ValidationManager.swift in Sources */,
+				0914F8F01FC28F5D00E99D4A /* ServerFake.swift in Sources */,
 				095AC38C1FBD3A210090C235 /* FormValidationModel.swift in Sources */,
 				095AC38E1FBD40E10090C235 /* ValidationError.swift in Sources */,
 				095AC3881FBD1A8E0090C235 /* RegisterViewController.swift in Sources */,
+				0914F8E61FC271DF00E99D4A /* LoginViewController.swift in Sources */,
+				0914F8E91FC278F700E99D4A /* UserHelper.swift in Sources */,
+				0913DC561FC5369D0008DB26 /* HomeViewController.swift in Sources */,
 				091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */,
 				095AC36A1FBC33270090C235 /* ViewController.swift in Sources */,
 				095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */,

@@ -45,7 +45,6 @@ class RegisterViewController: UIViewController {
             caution.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
                 action in
                 
-//                self.dismiss(animated: true, completion: nil)
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
                 let tabBarController = storyBoard.instantiateViewController(withIdentifier: "TimelineViewController") as! UITabBarController
                 UIApplication.shared.keyWindow?.rootViewController = tabBarController
@@ -54,6 +53,10 @@ class RegisterViewController: UIViewController {
             
             self.present(caution, animated: true, completion: nil)
         }
+    }
+
+    @IBAction func clickCancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

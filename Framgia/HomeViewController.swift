@@ -1,14 +1,14 @@
 //
-//  TimelineViewController.swift
+//  HomeViewController.swift
 //  Framgia
 //
-//  Created by  on 11/17/17.
+//  Created by  on 11/22/17.
 //  Copyright © 2017 Framgia. All rights reserved.
 //
 
 import UIKit
 
-class TimelineViewController: UITabBarController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +31,10 @@ class TimelineViewController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
-  
+
+    @IBAction
+    func logout(_ sender: AnyObject) {
+        UserHelper.shareInstance.logout()
+    }
+    
 }

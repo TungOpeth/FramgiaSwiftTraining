@@ -12,10 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var tabBarController: UITabBarController?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if UserHelper.shareInstance.checkLogin(){
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            tabBarController = (storyBoard.instantiateViewController(withIdentifier: "TimelineViewController") as! UITabBarController)
+            window?.rootViewController = tabBarController
+            window?.makeKeyAndVisible()
+        }
         return true
     }
 
