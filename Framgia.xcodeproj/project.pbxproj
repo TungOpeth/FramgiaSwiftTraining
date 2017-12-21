@@ -21,6 +21,30 @@
 		095AC38C1FBD3A210090C235 /* FormValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC38B1FBD3A210090C235 /* FormValidationModel.swift */; };
 		095AC38E1FBD40E10090C235 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC38D1FBD40E10090C235 /* ValidationError.swift */; };
 		095AC3901FBD423D0090C235 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC38F1FBD423D0090C235 /* ValidationManager.swift */; };
+		44CD9CDC6DB27F8C4D66C9A1 /* Pods_Framgia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D17A53A66CF132E6E7A8AFF /* Pods_Framgia.framework */; };
+		A11705CD1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11705CC1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift */; };
+		A16778271FEB5DFC0045E890 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778261FEB5DFB0045E890 /* BaseViewController.swift */; };
+		A167782B1FEB5E450045E890 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778281FEB5E440045E890 /* NavigationBarView.swift */; };
+		A167782C1FEB5E450045E890 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16778291FEB5E440045E890 /* NavigationBarView.xib */; };
+		A167782D1FEB5E450045E890 /* SearchNavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A167782A1FEB5E450045E890 /* SearchNavigationBarView.xib */; };
+		A167783F1FEB5E8D0045E890 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16778351FEB5E8A0045E890 /* libAdIdAccess.a */; };
+		A16778401FEB5E8D0045E890 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16778391FEB5E8C0045E890 /* libGoogleAnalyticsServices.a */; };
+		A16778411FEB5E8D0045E890 /* GaiTrackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A167783B1FEB5E8C0045E890 /* GaiTrackManager.m */; };
+		A167784F1FEB60250045E890 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A167784E1FEB60250045E890 /* libxml2.2.tbd */; };
+		A16778511FEB62830045E890 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A16778501FEB62830045E890 /* libsqlite3.0.tbd */; };
+		A16778531FEB62A50045E890 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16778521FEB62950045E890 /* CoreData.framework */; };
+		A16778591FEB63100045E890 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A16778581FEB63100045E890 /* libz.tbd */; };
+		A167785A1FEB63710045E890 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16778541FEB62B90045E890 /* CFNetwork.framework */; };
+		A167785C1FEB63A60045E890 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A167785B1FEB639F0045E890 /* SystemConfiguration.framework */; };
+		A167785F1FEB64EF0045E890 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167785E1FEB64EF0045E890 /* Constant.swift */; };
+		A16778611FEB65BE0045E890 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778601FEB65BE0045E890 /* DeviceManager.swift */; };
+		A16778641FEB66E90045E890 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778631FEB66E90045E890 /* BaseTabbarController.swift */; };
+		A16778681FEB66FF0045E890 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778661FEB66FF0045E890 /* TabbarView.swift */; };
+		A16778691FEB66FF0045E890 /* TabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16778671FEB66FF0045E890 /* TabbarView.xib */; };
+		A167786C1FEB671C0045E890 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167786B1FEB671C0045E890 /* BaseUIView.swift */; };
+		A167786F1FEB69B50045E890 /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167786E1FEB69B50045E890 /* BaseNaviController.swift */; };
+		A16778731FEB6DCC0045E890 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778721FEB6DCC0045E890 /* LoginViewController.swift */; };
+		A1B590A31FEB4E9700276C3B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B590A21FEB4E9700276C3B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +64,52 @@
 		095AC38B1FBD3A210090C235 /* FormValidationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidationModel.swift; sourceTree = "<group>"; };
 		095AC38D1FBD40E10090C235 /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		095AC38F1FBD423D0090C235 /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		8CA5EE461EFBA8872FE072EB /* Pods-Framgia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Framgia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Framgia/Pods-Framgia.release.xcconfig"; sourceTree = "<group>"; };
+		8D17A53A66CF132E6E7A8AFF /* Pods_Framgia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Framgia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11705CC1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+initialApplication.swift"; sourceTree = "<group>"; };
+		A16778261FEB5DFB0045E890 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A16778281FEB5E440045E890 /* NavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		A16778291FEB5E440045E890 /* NavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		A167782A1FEB5E450045E890 /* SearchNavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchNavigationBarView.xib; sourceTree = "<group>"; };
+		A16778301FEB5E890045E890 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		A16778311FEB5E890045E890 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		A16778321FEB5E8A0045E890 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		A16778331FEB5E8A0045E890 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		A16778341FEB5E8A0045E890 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		A16778351FEB5E8A0045E890 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
+		A16778361FEB5E8A0045E890 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		A16778371FEB5E8A0045E890 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		A16778381FEB5E8B0045E890 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		A16778391FEB5E8C0045E890 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		A167783A1FEB5E8C0045E890 /* GaiTrackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaiTrackManager.h; sourceTree = "<group>"; };
+		A167783B1FEB5E8C0045E890 /* GaiTrackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaiTrackManager.m; sourceTree = "<group>"; };
+		A167783C1FEB5E8D0045E890 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		A167783E1FEB5E8D0045E890 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		A16778431FEB5ECA0045E890 /* Framgia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Framgia-Bridging-Header.h"; sourceTree = "<group>"; };
+		A16778451FEB5F410045E890 /* TAGDataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGDataLayer.h; sourceTree = "<group>"; };
+		A16778461FEB5F420045E890 /* TAGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGManager.h; sourceTree = "<group>"; };
+		A16778471FEB5F420045E890 /* TAGContainerOpener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGContainerOpener.h; sourceTree = "<group>"; };
+		A16778481FEB5F420045E890 /* TAGContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGContainer.h; sourceTree = "<group>"; };
+		A16778491FEB5F420045E890 /* TAGLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGLogger.h; sourceTree = "<group>"; };
+		A167784A1FEB5FBD0045E890 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A167784C1FEB5FFE0045E890 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		A167784E1FEB60250045E890 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		A16778501FEB62830045E890 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A16778521FEB62950045E890 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A16778541FEB62B90045E890 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A16778561FEB62CF0045E890 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A16778581FEB63100045E890 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A167785B1FEB639F0045E890 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A167785E1FEB64EF0045E890 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A16778601FEB65BE0045E890 /* DeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		A16778631FEB66E90045E890 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
+		A16778661FEB66FF0045E890 /* TabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		A16778671FEB66FF0045E890 /* TabbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabbarView.xib; sourceTree = "<group>"; };
+		A167786B1FEB671C0045E890 /* BaseUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		A167786E1FEB69B50045E890 /* BaseNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviController.swift; sourceTree = "<group>"; };
+		A16778721FEB6DCC0045E890 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A1B590A21FEB4E9700276C3B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C65DE3D3FFE193F09C34E492 /* Pods-Framgia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Framgia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Framgia/Pods-Framgia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +117,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A167785C1FEB63A60045E890 /* SystemConfiguration.framework in Frameworks */,
+				A167785A1FEB63710045E890 /* CFNetwork.framework in Frameworks */,
+				A16778531FEB62A50045E890 /* CoreData.framework in Frameworks */,
+				44CD9CDC6DB27F8C4D66C9A1 /* Pods_Framgia.framework in Frameworks */,
+				A16778591FEB63100045E890 /* libz.tbd in Frameworks */,
+				A167783F1FEB5E8D0045E890 /* libAdIdAccess.a in Frameworks */,
+				A16778401FEB5E8D0045E890 /* libGoogleAnalyticsServices.a in Frameworks */,
+				A16778511FEB62830045E890 /* libsqlite3.0.tbd in Frameworks */,
+				A167784F1FEB60250045E890 /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +137,8 @@
 			children = (
 				095AC3661FBC33270090C235 /* Framgia */,
 				095AC3651FBC33270090C235 /* Products */,
+				7C9CB00B50963599B15AAD05 /* Pods */,
+				8A1C853D92B70C07A1B7A4C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,18 +153,18 @@
 		095AC3661FBC33270090C235 /* Framgia */ = {
 			isa = PBXGroup;
 			children = (
+				A16778241FEB5DDE0045E890 /* Base */,
+				A1B5909F1FEB4E5900276C3B /* Library */,
+				A167785D1FEB64DE0045E890 /* SystemConfig */,
+				A1B5909E1FEB4E0E00276C3B /* Storyboard */,
+				A1B5909D1FEB409A00276C3B /* ViewController */,
 				095AC3791FBC37440090C235 /* resource */,
 				095AC3671FBC33270090C235 /* AppDelegate.swift */,
+				A16778431FEB5ECA0045E890 /* Framgia-Bridging-Header.h */,
+				A11705C91FEB527B004B2F29 /* Categories */,
 				095AC3691FBC33270090C235 /* ViewController.swift */,
-				095AC36B1FBC33270090C235 /* Main.storyboard */,
 				095AC36E1FBC33270090C235 /* Assets.xcassets */,
-				095AC3701FBC33270090C235 /* LaunchScreen.storyboard */,
 				095AC3731FBC33270090C235 /* Info.plist */,
-				095AC3871FBD1A8D0090C235 /* RegisterViewController.swift */,
-				095AC38B1FBD3A210090C235 /* FormValidationModel.swift */,
-				095AC38D1FBD40E10090C235 /* ValidationError.swift */,
-				095AC38F1FBD423D0090C235 /* ValidationManager.swift */,
-				091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */,
 			);
 			path = Framgia;
 			sourceTree = "<group>";
@@ -99,6 +180,202 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		7C9CB00B50963599B15AAD05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C65DE3D3FFE193F09C34E492 /* Pods-Framgia.debug.xcconfig */,
+				8CA5EE461EFBA8872FE072EB /* Pods-Framgia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A1C853D92B70C07A1B7A4C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A167785B1FEB639F0045E890 /* SystemConfiguration.framework */,
+				A16778581FEB63100045E890 /* libz.tbd */,
+				A16778561FEB62CF0045E890 /* AdSupport.framework */,
+				A16778541FEB62B90045E890 /* CFNetwork.framework */,
+				A16778521FEB62950045E890 /* CoreData.framework */,
+				A16778501FEB62830045E890 /* libsqlite3.0.tbd */,
+				A167784E1FEB60250045E890 /* libxml2.2.tbd */,
+				A167784C1FEB5FFE0045E890 /* libxml2.tbd */,
+				A167784A1FEB5FBD0045E890 /* libsqlite3.tbd */,
+				8D17A53A66CF132E6E7A8AFF /* Pods_Framgia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A11705C91FEB527B004B2F29 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A11705CC1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A16778241FEB5DDE0045E890 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A16778751FEB72790045E890 /* BasePageViewController */,
+				A167786D1FEB69A10045E890 /* BaseNaviController */,
+				A167786A1FEB67100045E890 /* BaseUIView */,
+				A16778621FEB66E10045E890 /* BaseTabbarController */,
+				A16778251FEB5DF30045E890 /* BaseViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A16778251FEB5DF30045E890 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A16778281FEB5E440045E890 /* NavigationBarView.swift */,
+				A16778291FEB5E440045E890 /* NavigationBarView.xib */,
+				A167782A1FEB5E450045E890 /* SearchNavigationBarView.xib */,
+				A16778261FEB5DFB0045E890 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		A167782E1FEB5E730045E890 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				A16778441FEB5F120045E890 /* GoogleTagManager */,
+				A16778301FEB5E890045E890 /* GAI.h */,
+				A16778381FEB5E8B0045E890 /* GAIDictionaryBuilder.h */,
+				A16778361FEB5E8A0045E890 /* GAIEcommerceFields.h */,
+				A16778331FEB5E8A0045E890 /* GAIEcommerceProduct.h */,
+				A167783C1FEB5E8D0045E890 /* GAIEcommerceProductAction.h */,
+				A167783E1FEB5E8D0045E890 /* GAIEcommercePromotion.h */,
+				A16778341FEB5E8A0045E890 /* GAIFields.h */,
+				A16778371FEB5E8A0045E890 /* GAILogger.h */,
+				A16778311FEB5E890045E890 /* GAITrackedViewController.h */,
+				A16778321FEB5E8A0045E890 /* GAITracker.h */,
+				A167783A1FEB5E8C0045E890 /* GaiTrackManager.h */,
+				A167783B1FEB5E8C0045E890 /* GaiTrackManager.m */,
+				A16778351FEB5E8A0045E890 /* libAdIdAccess.a */,
+				A16778391FEB5E8C0045E890 /* libGoogleAnalyticsServices.a */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		A16778441FEB5F120045E890 /* GoogleTagManager */ = {
+			isa = PBXGroup;
+			children = (
+				A16778481FEB5F420045E890 /* TAGContainer.h */,
+				A16778471FEB5F420045E890 /* TAGContainerOpener.h */,
+				A16778451FEB5F410045E890 /* TAGDataLayer.h */,
+				A16778491FEB5F420045E890 /* TAGLogger.h */,
+				A16778461FEB5F420045E890 /* TAGManager.h */,
+			);
+			path = GoogleTagManager;
+			sourceTree = "<group>";
+		};
+		A167785D1FEB64DE0045E890 /* SystemConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A16778601FEB65BE0045E890 /* DeviceManager.swift */,
+				A167785E1FEB64EF0045E890 /* Constant.swift */,
+			);
+			path = SystemConfig;
+			sourceTree = "<group>";
+		};
+		A16778621FEB66E10045E890 /* BaseTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				A16778651FEB66F80045E890 /* TabbarView */,
+				A16778631FEB66E90045E890 /* BaseTabbarController.swift */,
+			);
+			path = BaseTabbarController;
+			sourceTree = "<group>";
+		};
+		A16778651FEB66F80045E890 /* TabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				A16778661FEB66FF0045E890 /* TabbarView.swift */,
+				A16778671FEB66FF0045E890 /* TabbarView.xib */,
+			);
+			path = TabbarView;
+			sourceTree = "<group>";
+		};
+		A167786A1FEB67100045E890 /* BaseUIView */ = {
+			isa = PBXGroup;
+			children = (
+				A167786B1FEB671C0045E890 /* BaseUIView.swift */,
+			);
+			path = BaseUIView;
+			sourceTree = "<group>";
+		};
+		A167786D1FEB69A10045E890 /* BaseNaviController */ = {
+			isa = PBXGroup;
+			children = (
+				A167786E1FEB69B50045E890 /* BaseNaviController.swift */,
+			);
+			path = BaseNaviController;
+			sourceTree = "<group>";
+		};
+		A16778701FEB6D930045E890 /* TimeLineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */,
+			);
+			path = TimeLineViewController;
+			sourceTree = "<group>";
+		};
+		A16778711FEB6DA50045E890 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				095AC3871FBD1A8D0090C235 /* RegisterViewController.swift */,
+				A16778721FEB6DCC0045E890 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A16778751FEB72790045E890 /* BasePageViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BasePageViewController;
+			sourceTree = "<group>";
+		};
+		A1B5909D1FEB409A00276C3B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A16778711FEB6DA50045E890 /* Login */,
+				095AC38B1FBD3A210090C235 /* FormValidationModel.swift */,
+				095AC38D1FBD40E10090C235 /* ValidationError.swift */,
+				095AC38F1FBD423D0090C235 /* ValidationManager.swift */,
+				A16778701FEB6D930045E890 /* TimeLineViewController */,
+				A1B590A11FEB4E8500276C3B /* MainViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A1B5909E1FEB4E0E00276C3B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				095AC3701FBC33270090C235 /* LaunchScreen.storyboard */,
+				095AC36B1FBC33270090C235 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A1B5909F1FEB4E5900276C3B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A167782E1FEB5E730045E890 /* GoogleAnalytics */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A1B590A11FEB4E8500276C3B /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1B590A21FEB4E9700276C3B /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +383,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 095AC3761FBC33270090C235 /* Build configuration list for PBXNativeTarget "Framgia" */;
 			buildPhases = (
+				CBA098C09A62012FDBFB2BEA /* [CP] Check Pods Manifest.lock */,
 				095AC3601FBC33270090C235 /* Sources */,
 				095AC3611FBC33270090C235 /* Frameworks */,
 				095AC3621FBC33270090C235 /* Resources */,
+				EE1389A92BA9E4BD2F0B25B9 /* [CP] Embed Pods Frameworks */,
+				CB9F54C95F32CC8C8A8624BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +411,7 @@
 				TargetAttributes = {
 					095AC3631FBC33270090C235 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -161,14 +442,77 @@
 				095AC3721FBC33270090C235 /* LaunchScreen.storyboard in Resources */,
 				095AC36F1FBC33270090C235 /* Assets.xcassets in Resources */,
 				095AC3841FBC37440090C235 /* textfield_bg@2x.png in Resources */,
+				A167782D1FEB5E450045E890 /* SearchNavigationBarView.xib in Resources */,
+				A16778691FEB66FF0045E890 /* TabbarView.xib in Resources */,
 				095AC3821FBC37440090C235 /* login_button@2x.png in Resources */,
 				095AC36D1FBC33270090C235 /* Main.storyboard in Resources */,
 				095AC3801FBC37440090C235 /* add_photo@2x.png in Resources */,
+				A167782C1FEB5E450045E890 /* NavigationBarView.xib in Resources */,
 				095AC3811FBC37440090C235 /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB9F54C95F32CC8C8A8624BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Framgia/Pods-Framgia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA098C09A62012FDBFB2BEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Framgia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE1389A92BA9E4BD2F0B25B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Framgia/Pods-Framgia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Framgia/Pods-Framgia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		095AC3601FBC33270090C235 /* Sources */ = {
@@ -176,12 +520,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				095AC3901FBD423D0090C235 /* ValidationManager.swift in Sources */,
+				A167786C1FEB671C0045E890 /* BaseUIView.swift in Sources */,
+				A167786F1FEB69B50045E890 /* BaseNaviController.swift in Sources */,
 				095AC38C1FBD3A210090C235 /* FormValidationModel.swift in Sources */,
+				A16778731FEB6DCC0045E890 /* LoginViewController.swift in Sources */,
+				A16778681FEB66FF0045E890 /* TabbarView.swift in Sources */,
+				A16778641FEB66E90045E890 /* BaseTabbarController.swift in Sources */,
+				A167782B1FEB5E450045E890 /* NavigationBarView.swift in Sources */,
 				095AC38E1FBD40E10090C235 /* ValidationError.swift in Sources */,
 				095AC3881FBD1A8E0090C235 /* RegisterViewController.swift in Sources */,
 				091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */,
+				A16778271FEB5DFC0045E890 /* BaseViewController.swift in Sources */,
+				A16778611FEB65BE0045E890 /* DeviceManager.swift in Sources */,
+				A11705CD1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift in Sources */,
 				095AC36A1FBC33270090C235 /* ViewController.swift in Sources */,
+				A167785F1FEB64EF0045E890 /* Constant.swift in Sources */,
+				A16778411FEB5E8D0045E890 /* GaiTrackManager.m in Sources */,
 				095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */,
+				A1B590A31FEB4E9700276C3B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,24 +656,41 @@
 		};
 		095AC3771FBC33270090C235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65DE3D3FFE193F09C34E492 /* Pods-Framgia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Framgia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framgia/Library/GoogleAnalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.Framgia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Framgia/Framgia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		095AC3781FBC33270090C235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA5EE461EFBA8872FE072EB /* Pods-Framgia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Framgia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framgia/Library/GoogleAnalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.framgia.Framgia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Framgia/Framgia-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
