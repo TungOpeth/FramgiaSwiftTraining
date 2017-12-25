@@ -44,12 +44,7 @@ class RegisterViewController: BaseViewController {
             
             caution.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {
                 action in
-                
-//                self.dismiss(animated: true, completion: nil)
-                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let tabBarController = storyBoard.instantiateViewController(withIdentifier: "TimelineViewController") as! UITabBarController
-                UIApplication.shared.keyWindow?.rootViewController = tabBarController
-                UIApplication.shared.keyWindow?.makeKeyAndVisible()
+                self.dismiss(animated: true, completion: nil) 
             }))
             
             self.present(caution, animated: true, completion: nil)

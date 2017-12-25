@@ -32,4 +32,19 @@ class LoginViewController: BaseViewController {
     }
     */
 
+    @IBAction
+    func clickRegister(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+        MainViewController.shared.showRegisterView()
+    }
+    
+    @IBAction
+    func clickLogin(_ sender: AnyObject) {
+        
+        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+        UserDefaults.standard.synchronize()
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

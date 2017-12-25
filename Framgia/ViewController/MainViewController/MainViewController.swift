@@ -11,20 +11,26 @@ import SwiftyJSON
 
 class MainViewController: BaseTabbarController {
     static let shared = MainViewController()
-
+var check_index = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
     }
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        showLoginView()
+        if checkLogin() == false {
+            showLoginView()
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func checkLogin() -> Bool {
+        return UserDefaults.standard.bool(forKey: "isLoggedIn")
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -53,5 +59,11 @@ class MainViewController: BaseTabbarController {
     func showLoginView() {
         let loginViewController = LoginViewController.newViewController()
         self.present(loginViewController, animated: true, completion: nil)
+  
+    }
+    
+    func  showRegisterView()  {
+        let register = RegisterViewController.newViewController()
+        APPDELEGATE?.window??.rootViewController?.present(register, animated: true, completion: nil)
     }
 }

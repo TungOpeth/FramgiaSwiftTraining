@@ -11,7 +11,6 @@ import Foundation
 extension AppDelegate {
     func initApplication() {
         let main = MainViewController.shared;
-        
         self.window?.rootViewController = MainViewController.shared
     }
 }

@@ -26,6 +26,7 @@ class NavigationBarView: UIView {
 
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var signOutButton: UIButton!
     
     @IBOutlet weak var otherButton: UIButton!
     
@@ -119,6 +120,16 @@ class NavigationBarView: UIView {
             delegate?.searchWithText!(txtSearch?.text)
         }
         self.endEditing(false)
+    }
+    
+    @IBAction func clickSignOut(_ sender: AnyObject) {
+        UserDefaults.standard.set(false, forKey: "isLoggedIn")
+        UserDefaults.standard.synchronize()
+        didLogout()
+    }
+    
+    func didLogout() {
+        MainViewController.shared.showLoginView()
     }
 }
 
