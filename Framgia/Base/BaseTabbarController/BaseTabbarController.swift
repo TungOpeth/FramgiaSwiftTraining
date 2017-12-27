@@ -42,7 +42,7 @@ class BaseTabbarController: UITabBarController, TabbarViewHandle
         let duration:Double = animation ? 0.3 : 0
 
         UIView.animate(withDuration: duration, animations: {
-            self.tabBarView.frame = CGRect(x: 0, y: DeviceManager.getWinSize().height - 50, width: DeviceManager.getWinSize().width, height: DeviceManager.getWinSize().height)
+            self.tabBarView.frame = CGRect(x: 0, y: DeviceManager.getWinSize().height - 50, width: DeviceManager.getWinSize().width, height: 50)
         }, completion: { (finish:Bool) in
             self.tabBarIsShowMore = false
         })

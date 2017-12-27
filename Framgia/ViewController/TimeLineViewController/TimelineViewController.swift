@@ -33,11 +33,10 @@ class TimelineViewController: BaseViewController, NavigationHandle {
     */
     
     func setupNavigation() {
-        initNavigationBar()
-        myNavigationBar?.updateTitle("Time Line")
+        initNavigtionBarSearch()
+        myNavigationBar?.updateTitle("TimeLine")
         myNavigationBar?.delegate = self
         myNavigationBar?.hiddenOrtherButton(true)
-        myNavigationBar?.setupRightButton("", hidden: true)
     }
     //MARK: Navigation delegate
     func clickLeftMenu(_ sender: AnyObject) {
