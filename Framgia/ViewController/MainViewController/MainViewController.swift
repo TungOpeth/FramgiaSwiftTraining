@@ -44,12 +44,19 @@ var check_index = 0
         let timeLine = TimelineViewController.newViewController()
         let timeLineNC = BaseNaviController(rootViewController: timeLine)
         timeLineNC.isNavigationBarHidden = true
+        
         // Tab 2
+        let profile = ProfileViewController.newViewController()
+        let profileNC = BaseNaviController(rootViewController: profile)
+        profileNC.isNavigationBarHidden = true
         
         // Tab 3
+        let more = MoreViewController.newViewController()
+        let moreNC = BaseNaviController(rootViewController: more)
+        moreNC.isNavigationBarHidden = true
         
         // Tab 4
-        updateViewControllers([timeLineNC])
+        updateViewControllers([timeLineNC, profileNC, moreNC])
     }
     
     func getRootnavigationController() -> UINavigationController {

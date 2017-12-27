@@ -50,8 +50,15 @@ class NavigationBarView: UIView {
     
     var delegate : NavigationHandle?
     
-    class func instanceFromNib() -> NavigationBarView {
-        return UINib(nibName: "NavigationBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
+    class func instanceFromNib(withType type:NavigationType) -> NavigationBarView {
+        switch type {
+        case .standard:
+            return UINib(nibName: "NavigationBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
+        case .naviSearch:
+            return UINib(nibName: "SearchNavigationBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
+        default:
+            return UINib(nibName: "NavigationBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
+        }
     }
     
     override func awakeFromNib() {

@@ -173,10 +173,10 @@
             </objects>
             <point key="canvasLocation" x="315" y="817"/>
         </scene>
-        <!--View Controller-->
+        <!--More View Controller-->
         <scene sceneID="462-H3-luz">
             <objects>
-                <viewController id="ZBp-s8-6iz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreViewController" id="ZBp-s8-6iz" customClass="MoreViewController" customModule="Framgia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fq4-au-EbF"/>
                         <viewControllerLayoutGuide type="bottom" id="hkG-XZ-JfS"/>
@@ -210,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="726" y="-1184"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="OwJ-p3-NM9">
             <objects>
-                <viewController id="ONj-Nq-4LF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" automaticallyAdjustsScrollViewInsets="NO" id="ONj-Nq-4LF" customClass="ProfileViewController" customModule="Framgia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dkV-yV-pbL"/>
                         <viewControllerLayoutGuide type="bottom" id="RT2-8D-UrU"/>
@@ -221,9 +221,40 @@
                     <view key="view" contentMode="scaleToFill" id="B4V-X3-S0h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-0m-17E">
+                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W4P-n2-8Bh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VKO-UD-mSY">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RT2-8D-UrU" firstAttribute="top" secondItem="ce1-0m-17E" secondAttribute="bottom" id="Xxh-C8-aAK"/>
+                            <constraint firstAttribute="trailing" secondItem="ce1-0m-17E" secondAttribute="trailing" id="b0k-SZ-Sgx"/>
+                            <constraint firstItem="ce1-0m-17E" firstAttribute="leading" secondItem="B4V-X3-S0h" secondAttribute="leading" id="f1t-ho-dCM"/>
+                            <constraint firstItem="ce1-0m-17E" firstAttribute="top" secondItem="dkV-yV-pbL" secondAttribute="bottom" constant="40" id="iDn-g4-RCI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qjD-Ml-sRv"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ce1-0m-17E" id="zA9-48-P4l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dmi-6B-B2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -465,7 +496,7 @@
         <!--More-->
         <scene sceneID="Ox8-ON-9Ta">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yXb-8P-2Hl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="yXb-8P-2Hl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="More" id="MLZ-np-7nd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JM0-OT-wPy">

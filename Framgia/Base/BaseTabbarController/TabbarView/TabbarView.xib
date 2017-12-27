@@ -27,21 +27,21 @@
                 </imageView>
                 <view opaque="NO" contentMode="scaleToFill" misplaced="YES" id="2Ea-fX-0Ss">
                     <rect key="frame" x="0.0" y="1" width="320" height="50"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K4w-lk-aCM">
-                            <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                            <rect key="frame" x="-8" y="-6" width="97" height="62"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="9"/>
                             <inset key="titleEdgeInsets" minX="-20" minY="40" maxX="0.0" maxY="5"/>
                             <inset key="imageEdgeInsets" minX="30" minY="-5" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="Timeline">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Timeline" image="icon-world">
+                                <color key="titleColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="selected" title="TimeLine">
-                                <color key="titleColor" red="0.70588235294117641" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="selected" image="icon-notice-hl">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="dubleclick:" destination="iN0-l3-epB" eventType="touchDownRepeat" id="lHJ-Zr-sv3"/>
@@ -49,18 +49,18 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hnh-jw-tYh">
-                            <rect key="frame" x="80" y="0.0" width="80" height="50"/>
+                            <rect key="frame" x="118" y="14" width="62" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="9"/>
                             <inset key="titleEdgeInsets" minX="-20" minY="40" maxX="0.0" maxY="5"/>
                             <inset key="imageEdgeInsets" minX="30" minY="-5" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="abc">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="        Profile" image="tabbar_setting">
+                                <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="selected" title="abc">
-                                <color key="titleColor" red="0.70588235294117641" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="selected" title="        Profile" image="tabbar_setting_hl">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="dubleclick:" destination="iN0-l3-epB" eventType="touchDownRepeat" id="cuT-nM-iK0"/>
@@ -68,45 +68,26 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bsj-3r-ib5">
-                            <rect key="frame" x="160" y="0.0" width="80" height="50"/>
+                            <rect key="frame" x="228" y="17" width="59" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="9"/>
                             <inset key="titleEdgeInsets" minX="-20" minY="40" maxX="0.0" maxY="5"/>
                             <inset key="imageEdgeInsets" minX="30" minY="-5" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="xyz">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="          More" image="icon-more">
+                                <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="selected" title="xyz">
-                                <color key="titleColor" red="0.70588235294117641" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="selected" title="          More" image="icon-more-hl">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="dubleclick:" destination="iN0-l3-epB" eventType="touchDownRepeat" id="Drc-NV-cbN"/>
                                 <action selector="selectTabIndex:" destination="iN0-l3-epB" eventType="touchUpInside" id="2lr-zf-eI7"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jo9-Gj-cD7">
-                            <rect key="frame" x="240" y="0.0" width="80" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="9"/>
-                            <inset key="titleEdgeInsets" minX="-20" minY="40" maxX="0.0" maxY="5"/>
-                            <inset key="imageEdgeInsets" minX="30" minY="-5" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="Library">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="selected" title="Library">
-                                <color key="titleColor" red="0.70588235294117641" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="dubleclick:" destination="iN0-l3-epB" eventType="touchDownRepeat" id="EdV-fl-EhF"/>
-                                <action selector="selectTabIndex:" destination="iN0-l3-epB" eventType="touchUpInside" id="KoD-aw-mcj"/>
-                            </connections>
-                        </button>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,13 +96,18 @@
             <connections>
                 <outlet property="_contentView" destination="2Ea-fX-0Ss" id="Roj-SI-X0I"/>
                 <outlet property="btnHome" destination="K4w-lk-aCM" id="jdV-Ci-S1W"/>
-                <outlet property="btnVideo" destination="Jo9-Gj-cD7" id="PVB-IF-WEI"/>
             </connections>
             <point key="canvasLocation" x="139" y="70"/>
         </view>
     </objects>
     <resources>
+        <image name="icon-more" width="16" height="16"/>
+        <image name="icon-more-hl" width="16" height="16"/>
+        <image name="icon-notice-hl" width="20" height="20"/>
+        <image name="icon-world" width="19" height="19"/>
         <image name="line-h" width="320" height="1"/>
+        <image name="tabbar_setting" width="22" height="22"/>
+        <image name="tabbar_setting_hl" width="22" height="22"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

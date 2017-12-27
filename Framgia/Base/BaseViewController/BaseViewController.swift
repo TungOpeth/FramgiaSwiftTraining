@@ -71,17 +71,19 @@ class BaseViewController: GAITrackedViewController, UIGestureRecognizerDelegate 
     }
     // MARK: Navigation Bar
     func initNavigationBar() {
-        myNavigationBar = NavigationBarView.instanceFromNib()
+        myNavigationBar = NavigationBarView.instanceFromNib(withType: NavigationType.standard)
         myNavigationBar?.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: MyAppLication.NavigationBarHeight)
         self.view.addSubview(myNavigationBar!)
         myNavigationBar?.navigationBarType = .standard
     }
     
     func initNavigtionBarSearch() {
-        myNavigationBar = NavigationBarView.instanceFromNib()
+        myNavigationBar = NavigationBarView.instanceFromNib(withType: NavigationType.naviSearch)
         myNavigationBar?.frame = CGRect(x: 0, y: 0, width: DeviceManager.getWinSize().width, height: MyAppLication.NavigationBarHeight)
         self.view.addSubview(myNavigationBar!)
         myNavigationBar?.navigationBarType = .naviSearch
     }
+    
+    
 }
 

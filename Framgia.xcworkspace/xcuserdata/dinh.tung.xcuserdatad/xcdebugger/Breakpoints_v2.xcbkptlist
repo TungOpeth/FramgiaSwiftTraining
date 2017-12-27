@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Framgia/ViewController/MainViewController/MainViewController.swift"
-            timestampString = "535864455.150096"
+            timestampString = "535890229.561683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "showRegisterView()"
             landmarkType = "7">
          </BreakpointContent>
