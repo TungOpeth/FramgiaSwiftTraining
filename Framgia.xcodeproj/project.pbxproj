@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090B7B041FFB7E93008D0795 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B7B031FFB7E93008D0795 /* Constants.swift */; };
 		091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */; };
+		091E1FD61FF4D0F1007086C9 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E1FD51FF4D0F1007086C9 /* NewsFeed.swift */; };
 		095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3671FBC33270090C235 /* AppDelegate.swift */; };
 		095AC36A1FBC33270090C235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3691FBC33270090C235 /* ViewController.swift */; };
 		095AC36D1FBC33270090C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095AC36B1FBC33270090C235 /* Main.storyboard */; };
@@ -57,7 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090B7B031FFB7E93008D0795 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		091E1FD51FF4D0F1007086C9 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		095AC3641FBC33270090C235 /* Framgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095AC3671FBC33270090C235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		095AC3691FBC33270090C235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091E1FD41FF4CF96007086C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				091E1FD51FF4D0F1007086C9 /* NewsFeed.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		093E8AA91FECBDD000E48437 /* ProfileViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,11 +198,12 @@
 		095AC3661FBC33270090C235 /* Framgia */ = {
 			isa = PBXGroup;
 			children = (
-				A16778241FEB5DDE0045E890 /* Base */,
-				A1B5909F1FEB4E5900276C3B /* Library */,
 				A167785D1FEB64DE0045E890 /* SystemConfig */,
 				A1B5909E1FEB4E0E00276C3B /* Storyboard */,
 				A1B5909D1FEB409A00276C3B /* ViewController */,
+				A1B5909F1FEB4E5900276C3B /* Library */,
+				A16778241FEB5DDE0045E890 /* Base */,
+				091E1FD41FF4CF96007086C9 /* Model */,
 				095AC3791FBC37440090C235 /* resource */,
 				095AC3671FBC33270090C235 /* AppDelegate.swift */,
 				A16778431FEB5ECA0045E890 /* Framgia-Bridging-Header.h */,
@@ -198,6 +211,7 @@
 				095AC3691FBC33270090C235 /* ViewController.swift */,
 				095AC36E1FBC33270090C235 /* Assets.xcassets */,
 				095AC3731FBC33270090C235 /* Info.plist */,
+				090B7B031FFB7E93008D0795 /* Constants.swift */,
 			);
 			path = Framgia;
 			sourceTree = "<group>";
@@ -565,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091E1FD61FF4D0F1007086C9 /* NewsFeed.swift in Sources */,
 				097A06081FF1088D005610B0 /* MoreViewController.swift in Sources */,
 				095AC3901FBD423D0090C235 /* ValidationManager.swift in Sources */,
 				097A06151FF37DDB005610B0 /* FeedCollectionViewCell.swift in Sources */,
@@ -590,6 +605,7 @@
 				A16778411FEB5E8D0045E890 /* GaiTrackManager.m in Sources */,
 				095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */,
 				A1B590A31FEB4E9700276C3B /* MainViewController.swift in Sources */,
+				090B7B041FFB7E93008D0795 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

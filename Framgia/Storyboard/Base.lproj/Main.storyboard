@@ -203,12 +203,47 @@
                     <view key="view" contentMode="scaleToFill" id="bAH-Ha-Czd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vug-xp-oao">
+                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="IfQ-wH-2bt"/>
+                                    <constraint firstAttribute="height" constant="508" id="L7C-an-h6j"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZUF-73-xXX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ayM-A1-Vdc">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vug-xp-oao" secondAttribute="trailing" id="Ggb-CB-cwK"/>
+                            <constraint firstItem="vug-xp-oao" firstAttribute="top" secondItem="bAH-Ha-Czd" secondAttribute="top" constant="60" id="InU-hF-21i"/>
+                            <constraint firstItem="vug-xp-oao" firstAttribute="leading" secondItem="bAH-Ha-Czd" secondAttribute="leading" id="kKT-3Q-vZO"/>
+                            <constraint firstItem="bGp-MP-LEw" firstAttribute="top" secondItem="vug-xp-oao" secondAttribute="bottom" id="utN-in-UMW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="vug-xp-oao" id="W9X-8v-oOE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4x-S6-7On" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="-1184"/>
+            <point key="canvasLocation" x="725.625" y="-1184.1549295774648"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="OwJ-p3-NM9">
