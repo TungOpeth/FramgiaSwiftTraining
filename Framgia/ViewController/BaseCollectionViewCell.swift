@@ -13,9 +13,11 @@ class BaseCollectionViewCell: UICollectionViewCell {
         return CGSize(width: 50, height: 50)
     }
     
-    func configCell(_ item: AnyObject)  {
-        
+    class func getSizeWithItem(withItem item: AnyObject) -> CGSize {
+        return CGSize(width: 50, height: 50)
     }
+    
+    func configCell(_ item: AnyObject)  {}
     
     class func getIdentify() -> String {
         return String(describing: self)

@@ -20,9 +20,6 @@ class ProfileViewController: BaseViewController, NavigationHandle, UICollectionV
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        // Do any additional setup after loading the view.
-        
-        
         collectionView.register(UINib.init(nibName: "ProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProfileCollectionViewCell")
         collectionView.register(UINib.init(nibName: "StatusCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "StatusCollectionViewCell")
         collectionView.register(UINib.init(nibName: "FeedCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FeedCollectionViewCell")
