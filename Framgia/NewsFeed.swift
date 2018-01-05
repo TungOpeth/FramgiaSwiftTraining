@@ -16,7 +16,11 @@ class NewsFeed{
     fileprivate var _content: String!
     fileprivate var _liked: String!
     fileprivate var _commented: String!
-    fileprivate var _imageURL: String!
+    fileprivate var _avatarURL: String!
+    fileprivate var _postType: String!
+    fileprivate var _numberOfPreviewImages: Int! = 0
+    fileprivate var images:[NSDictionary]?
+    
     
     var userName: String {
         if _userName == nil {
@@ -46,11 +50,25 @@ class NewsFeed{
         return _commented
     }
     
-    var imageURL: String {
-        if _imageURL == nil {
-            _imageURL = ""
+    var avatarURL: String {
+        if _avatarURL == nil {
+            _avatarURL = ""
         }
-        return _imageURL
+        return _avatarURL
+    }
+    
+    var postType: String {
+        if _postType == nil {
+            _postType = ""
+        }
+        return _postType
+    }
+    
+    var numberOfPreviewImages: Int {
+        if _numberOfPreviewImages == nil {
+            _numberOfPreviewImages = 0
+        }
+        return _numberOfPreviewImages
     }
     
     init?(json: [String: JSON]) {
@@ -58,7 +76,9 @@ class NewsFeed{
             let content = json["content_decoded"]?.string,
             let liked = json["liked"]?.string,
             let commented = json["commented"]?.string,
-            let imageURL = json["avatar"]?.string
+            let postType = json["post_type"]?.string,
+            let avatarURL = json["avatar"]?.string,
+            let previewImagesJSON = json["attachments"]?.string
             else {
                 return nil
         }
@@ -67,7 +87,10 @@ class NewsFeed{
         self._content = content
         self._liked = liked
         self._commented = commented
-        self._imageURL = imageURL
+        self._postType = postType
+        self._avatarURL = avatarURL
+        self._numberOfPreviewImages = previewImagesJSON.components(separatedBy: "},{").count
+        getImageURLs(numberOfImages: self._numberOfPreviewImages, previewImagesJSON: previewImagesJSON)
     }
     
     class func downloadNewsFeeds(completed: @escaping DownloadComplete){
@@ -93,7 +116,46 @@ class NewsFeed{
         }
     }
     
-    func getType() -> String {
-        return "0"
+    private func getImageURLs(numberOfImages: Int, previewImagesJSON: String) {
+        if let list = self.convertToDictionary(text: previewImagesJSON) as? [NSDictionary] {
+            images = list
+        }
     }
+    
+    func convertToDictionary(text: String) -> Any? {
+        
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? Any
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        
+        return nil
+        
+    }
+    
+    func getType() -> String {
+        if self._postType == "images" && self._numberOfPreviewImages > 1 {
+            return "1"
+        } else if self._postType == "images" && self._numberOfPreviewImages == 1 {
+            return "2"
+        } else if self._postType == "videos"{
+            return "0"
+        } else {
+            return "0"
+        }
+    }
+    
+    
+    func getImageAtIndex(_ index:Int) -> String? {
+        if let _images = images {
+            if index < _images.count {
+                return _images[index]["src"] as? String
+            }
+        }
+        return ""
+    }
+    
 }
