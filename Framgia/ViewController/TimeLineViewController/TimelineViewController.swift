@@ -27,6 +27,10 @@ class TimelineViewController: BaseViewController, NavigationHandle, UICollection
         
         collectionView.register(StatusCollectionViewCell.getNib(), forCellWithReuseIdentifier: StatusCollectionViewCell.getIdentify())
         
+        collectionView.register(ImagesCollectionViewCell.getNib(), forCellWithReuseIdentifier: ImagesCollectionViewCell.getIdentify())
+        
+        collectionView.register(ImageCollectionViewCell.getNib(), forCellWithReuseIdentifier: ImageCollectionViewCell.getIdentify())
+        
         
         NewsFeed.downloadNewsFeeds(completed: { (items) in
             self.newsFeeds = items
@@ -52,18 +56,18 @@ class TimelineViewController: BaseViewController, NavigationHandle, UICollection
     func getCellIdentify(withItem _item: NewsFeed,_ isClass: Bool) -> String {
         if isClass {
             if _item.getType() == "1" {
-                return NSStringFromClass(ProfileCollectionViewCell.self)
+                return NSStringFromClass(ImagesCollectionViewCell.self)
             } else if _item.getType() == "2" {
-                return NSStringFromClass(StatusCollectionViewCell.self)
+                return NSStringFromClass(ImageCollectionViewCell.self)
             } else {
                 return NSStringFromClass(FeedCollectionViewCell.self)
             }
         }
         
         if _item.getType() == "1" {
-            return ProfileCollectionViewCell.getIdentify()
+            return ImagesCollectionViewCell.getIdentify()
         } else if _item.getType() == "2" {
-            return StatusCollectionViewCell.getIdentify()
+            return ImageCollectionViewCell.getIdentify()
         } else {
             return FeedCollectionViewCell.getIdentify()
         }
