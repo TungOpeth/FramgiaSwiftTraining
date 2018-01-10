@@ -209,6 +209,16 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCk-47-NeJ">
+                        <rect key="frame" x="9" y="64" width="356" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="356" id="Spq-XK-enm"/>
+                        </constraints>
+                        <connections>
+                            <action selector="readMoreBtnTapped:" destination="fJm-vC-vzF" eventType="touchUpInside" id="QkR-qJ-v3m"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -220,6 +230,8 @@
                 <constraint firstItem="gaJ-CA-rWh" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="8" id="4iR-E8-4tN"/>
                 <constraint firstAttribute="trailing" secondItem="rPs-fV-vgt" secondAttribute="trailing" id="7Ve-Lv-lzo"/>
                 <constraint firstItem="gaJ-CA-rWh" firstAttribute="top" secondItem="rPs-fV-vgt" secondAttribute="bottom" constant="7" id="7ee-Vb-628"/>
+                <constraint firstItem="ITb-qS-1Ms" firstAttribute="top" secondItem="JCk-47-NeJ" secondAttribute="bottom" constant="1" id="80d-w3-ob8"/>
+                <constraint firstAttribute="trailing" secondItem="JCk-47-NeJ" secondAttribute="trailing" constant="8" id="B6X-wC-R78"/>
                 <constraint firstItem="Y6y-ZX-pY7" firstAttribute="top" secondItem="1Up-Zo-dir" secondAttribute="bottom" constant="3" id="ByH-jX-qLJ"/>
                 <constraint firstAttribute="bottom" secondItem="XjX-Ce-CT4" secondAttribute="bottom" constant="12" id="CrB-O0-XL7"/>
                 <constraint firstItem="PJ4-Kj-Zx4" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="18" id="E6j-18-AoM"/>
@@ -229,6 +241,8 @@
                 <constraint firstItem="ITb-qS-1Ms" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="8" id="IUV-tH-zkR"/>
                 <constraint firstItem="Y6y-ZX-pY7" firstAttribute="top" secondItem="cnk-pe-8xP" secondAttribute="bottom" constant="3" id="Ody-AQ-hux"/>
                 <constraint firstItem="SM1-oy-WeT" firstAttribute="leading" secondItem="ITb-qS-1Ms" secondAttribute="trailing" constant="1" id="OeV-cg-yu0"/>
+                <constraint firstItem="JCk-47-NeJ" firstAttribute="top" secondItem="gaJ-CA-rWh" secondAttribute="bottom" constant="1" id="Owj-Ao-ic5"/>
+                <constraint firstItem="JCk-47-NeJ" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="8" id="RcI-fh-iET"/>
                 <constraint firstItem="m5h-DB-jxc" firstAttribute="leading" secondItem="GsO-lj-v7Q" secondAttribute="trailing" constant="2" id="SZc-Gj-cTh"/>
                 <constraint firstItem="ybu-2y-ejn" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="34" id="UUH-AY-Re4"/>
                 <constraint firstItem="ANd-pS-t7w" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="32" id="WBH-Kp-NEM"/>
@@ -266,6 +280,7 @@
                 <outlet property="imageView" destination="gaJ-CA-rWh" id="OS0-iX-WYN"/>
                 <outlet property="liked" destination="1Up-Zo-dir" id="bCO-Rt-NPU"/>
                 <outlet property="moreImageLbl" destination="dGk-RQ-CDf" id="93k-ts-HgV"/>
+                <outlet property="readMoreBtn" destination="JCk-47-NeJ" id="fzO-jN-Ia0"/>
                 <outlet property="secondImageView" destination="SM1-oy-WeT" id="Vvp-Ho-u5a"/>
                 <outlet property="thirdImageView" destination="dcD-bZ-tsp" id="jJo-B5-NU3"/>
                 <outlet property="userName" destination="vgb-bo-ib6" id="HYW-6P-X4b"/>

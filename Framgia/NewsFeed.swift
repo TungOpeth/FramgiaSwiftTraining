@@ -12,6 +12,8 @@ import Alamofire
 
 
 class NewsFeed{
+    var showFull = false
+    var objectDict:[String:JSON]?
     fileprivate var _userName: String!
     fileprivate var _content: String!
     fileprivate var _liked: String!
@@ -82,7 +84,7 @@ class NewsFeed{
             else {
                 return nil
         }
-        
+        self.objectDict = json
         self._userName = userName
         self._content = content
         self._liked = liked
@@ -158,4 +160,18 @@ class NewsFeed{
         return ""
     }
     
+    func getlistComment() -> [Comment]? {
+        if let json = self.objectDict {
+            if let listCommentJson  = json["comments"]?.array {
+                var results:[Comment] = []
+                for comment in listCommentJson {
+                    if let commentItem = Comment(json: comment.dictionaryValue) {
+                        results.append(commentItem)
+                    }
+                }
+                return results
+            }
+        }
+        return nil
+    }
 }

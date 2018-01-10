@@ -11,3 +11,4 @@ import Foundation
 let NEWS_FEED_URL = "http://tienpm.pythonanywhere.com/mathoiden/api/getNewsFeed?start=0&limit=20"
 
 typealias DownloadComplete = ([NewsFeed]) -> Void
+typealias ExtractComplete = ([Comment]) -> Void

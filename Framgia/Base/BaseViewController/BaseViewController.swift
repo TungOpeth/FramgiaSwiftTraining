@@ -84,6 +84,11 @@ class BaseViewController: GAITrackedViewController, UIGestureRecognizerDelegate 
         myNavigationBar?.navigationBarType = .naviSearch
     }
     
-    
+    func initNavigationBarReadMore() {
+        myNavigationBar = NavigationBarView.instanceFromNib(withType: NavigationType.readMore)
+        myNavigationBar?.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: MyAppLication.NavigationBarHeight)
+        self.view.addSubview(myNavigationBar!)
+        myNavigationBar?.navigationBarType = .readMore
+    }
 }
 
