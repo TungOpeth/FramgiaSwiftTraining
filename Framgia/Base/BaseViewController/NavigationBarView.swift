@@ -20,6 +20,7 @@ public enum NavigationType:Int {
     case standard = 0
     case dropdown = 1
     case naviSearch = 2
+    case readMore = 3
 }
 
 class NavigationBarView: UIView {
@@ -56,6 +57,8 @@ class NavigationBarView: UIView {
             return UINib(nibName: "NavigationBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
         case .naviSearch:
             return UINib(nibName: "SearchNavigationBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
+        case .readMore:
+            return UINib(nibName: "ReadMoreBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
         default:
             return UINib(nibName: "NavigationBarView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! NavigationBarView
         }
@@ -72,6 +75,15 @@ class NavigationBarView: UIView {
     
     func hiddenOrtherButton(_ hidden:Bool) {
         self.otherButton?.isHidden = hidden
+    }
+    
+    func hideSignoutBtn(_ hidden:Bool) {
+        self.signOutButton.isHidden = hidden
+    }
+    
+    func updateLeftBtn() {
+        self.leftButton.setImage(UIImage(named: "navigationbar_back_icon.png"), for: UIControlState.normal)
+
     }
     
     func setupRightButton(_ img:String, hidden:Bool) {
@@ -93,6 +105,10 @@ class NavigationBarView: UIView {
             case .naviSearch:
                 lbTitle?.isHidden = true
                 searchBarView?.isHidden = false
+                break
+            case .readMore:
+                lbTitle?.isHidden = false
+                searchBarView?.isHidden = true
                 break
             default:
                 lbTitle?.isHidden = true
