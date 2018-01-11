@@ -26,6 +26,15 @@ class ImagesCollectionViewCell: BaseCollectionViewCell {
     private var newsfeed = NewsFeed(json: ["":""])
     
 
+    @IBAction func viewImagesBtnTapped(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewImageViewController") as! ViewImageViewController
+        
+        nextViewController.feed = newsfeed
+        
+        MainViewController.shared.getRootnavigationController().pushViewController(nextViewController, animated: true)
+    }
     @IBAction func readMoreBtnTapped(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         

@@ -38,8 +38,7 @@ class ReadMoreViewController: BaseViewController, NavigationHandle, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 1 + Int((comments?.count)!)
-        return 0
+        return 1 + Int((comments?.count)!)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -74,7 +73,7 @@ class ReadMoreViewController: BaseViewController, NavigationHandle, UICollection
                     let item = items[indexPath.row - 1]
                     let des = item.content
                     
-                    let messageHeight = des.height(withConstrainedWidth: DeviceManager.getWinSize().width - 40, font: UIFont.systemFont(ofSize: 17))
+                    let messageHeight = des.height(withConstrainedWidth: DeviceManager.getWinSize().width - 40, font: UIFont.systemFont(ofSize: 15))
                     
                     let height = 91  +  messageHeight
                     return CGSize (width: DeviceManager.getWinSize().width, height: height )

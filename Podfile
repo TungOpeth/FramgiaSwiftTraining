@@ -10,4 +10,6 @@ target 'Framgia' do
     pod 'SwiftyJSON'
     pod 'SDWebImage', '~>3.8'
     pod 'MagicalRecord'
+    pod 'ImageSlideshow', '~> 1.0.0'
+    pod 'ImageSlideshow/SDWebImage'
 end

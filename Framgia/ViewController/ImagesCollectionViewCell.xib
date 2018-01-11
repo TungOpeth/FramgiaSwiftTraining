@@ -219,6 +219,13 @@
                             <action selector="readMoreBtnTapped:" destination="fJm-vC-vzF" eventType="touchUpInside" id="QkR-qJ-v3m"/>
                         </connections>
                     </button>
+                    <button opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n79-w2-twm">
+                        <rect key="frame" x="8" y="89" width="362" height="221"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="viewImagesBtnTapped:" destination="fJm-vC-vzF" eventType="touchUpInside" id="8DN-54-Les"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -228,7 +235,9 @@
                 <constraint firstItem="dGk-RQ-CDf" firstAttribute="centerY" secondItem="dcD-bZ-tsp" secondAttribute="centerY" id="2LI-QO-hVo"/>
                 <constraint firstItem="Y6y-ZX-pY7" firstAttribute="top" secondItem="ybu-2y-ejn" secondAttribute="bottom" constant="3" id="3iu-8t-ZiW"/>
                 <constraint firstItem="gaJ-CA-rWh" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="8" id="4iR-E8-4tN"/>
+                <constraint firstAttribute="trailing" secondItem="n79-w2-twm" secondAttribute="trailing" constant="8" id="51P-dR-TAJ"/>
                 <constraint firstAttribute="trailing" secondItem="rPs-fV-vgt" secondAttribute="trailing" id="7Ve-Lv-lzo"/>
+                <constraint firstItem="n79-w2-twm" firstAttribute="top" secondItem="PJ4-Kj-Zx4" secondAttribute="bottom" constant="14" id="7Yr-zK-Uig"/>
                 <constraint firstItem="gaJ-CA-rWh" firstAttribute="top" secondItem="rPs-fV-vgt" secondAttribute="bottom" constant="7" id="7ee-Vb-628"/>
                 <constraint firstItem="ITb-qS-1Ms" firstAttribute="top" secondItem="JCk-47-NeJ" secondAttribute="bottom" constant="1" id="80d-w3-ob8"/>
                 <constraint firstAttribute="trailing" secondItem="JCk-47-NeJ" secondAttribute="trailing" constant="8" id="B6X-wC-R78"/>
@@ -242,6 +251,7 @@
                 <constraint firstItem="Y6y-ZX-pY7" firstAttribute="top" secondItem="cnk-pe-8xP" secondAttribute="bottom" constant="3" id="Ody-AQ-hux"/>
                 <constraint firstItem="SM1-oy-WeT" firstAttribute="leading" secondItem="ITb-qS-1Ms" secondAttribute="trailing" constant="1" id="OeV-cg-yu0"/>
                 <constraint firstItem="JCk-47-NeJ" firstAttribute="top" secondItem="gaJ-CA-rWh" secondAttribute="bottom" constant="1" id="Owj-Ao-ic5"/>
+                <constraint firstItem="n79-w2-twm" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="8" id="P6m-Vo-BlN"/>
                 <constraint firstItem="JCk-47-NeJ" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="8" id="RcI-fh-iET"/>
                 <constraint firstItem="m5h-DB-jxc" firstAttribute="leading" secondItem="GsO-lj-v7Q" secondAttribute="trailing" constant="2" id="SZc-Gj-cTh"/>
                 <constraint firstItem="ybu-2y-ejn" firstAttribute="leading" secondItem="fJm-vC-vzF" secondAttribute="leading" constant="34" id="UUH-AY-Re4"/>
@@ -271,6 +281,7 @@
                 <constraint firstItem="m5h-DB-jxc" firstAttribute="top" secondItem="vgb-bo-ib6" secondAttribute="bottom" constant="4" id="vh4-8m-iTg"/>
                 <constraint firstItem="6Qt-f2-GWX" firstAttribute="leading" secondItem="ybu-2y-ejn" secondAttribute="trailing" constant="13" id="wta-qw-HMB"/>
                 <constraint firstAttribute="trailing" secondItem="SM1-oy-WeT" secondAttribute="trailing" constant="8" id="wwD-f4-Ouf"/>
+                <constraint firstItem="n79-w2-twm" firstAttribute="height" secondItem="ITb-qS-1Ms" secondAttribute="height" id="zFA-Ya-dY2"/>
             </constraints>
             <size key="customSize" width="375" height="389"/>
             <connections>

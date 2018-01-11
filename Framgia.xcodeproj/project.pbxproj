@@ -21,6 +21,7 @@
 		09163B742004995700AE5874 /* CommentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09163B722004995700AE5874 /* CommentCollectionViewCell.xib */; };
 		091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */; };
 		091E1FD61FF4D0F1007086C9 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E1FD51FF4D0F1007086C9 /* NewsFeed.swift */; };
+		0943559A2007388D00A16681 /* ViewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355992007388D00A16681 /* ViewImageViewController.swift */; };
 		095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3671FBC33270090C235 /* AppDelegate.swift */; };
 		095AC36A1FBC33270090C235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AC3691FBC33270090C235 /* ViewController.swift */; };
 		095AC36D1FBC33270090C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095AC36B1FBC33270090C235 /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 		09163B722004995700AE5874 /* CommentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCollectionViewCell.xib; sourceTree = "<group>"; };
 		091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		091E1FD51FF4D0F1007086C9 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		094355992007388D00A16681 /* ViewImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewImageViewController.swift; sourceTree = "<group>"; };
 		095AC3641FBC33270090C235 /* Framgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095AC3671FBC33270090C235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		095AC3691FBC33270090C235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,14 @@
 				09163B661FFF1BA700AE5874 /* ImageCollectionViewCell.xib */,
 			);
 			name = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		09435598200720E800A16681 /* ViewImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				094355992007388D00A16681 /* ViewImageViewController.swift */,
+			);
+			name = ViewImageViewController;
 			sourceTree = "<group>";
 		};
 		095AC35B1FBC33270090C235 = {
@@ -433,6 +443,7 @@
 		A1B5909D1FEB409A00276C3B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				09435598200720E800A16681 /* ViewImageViewController */,
 				09163B6A20034C8C00AE5874 /* ReadMoreViewController */,
 				097A06061FF10878005610B0 /* MoreViewController */,
 				093E8AA91FECBDD000E48437 /* ProfileViewController */,
@@ -600,6 +611,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Framgia/Pods-Framgia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -607,6 +619,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -644,6 +657,7 @@
 				095AC38E1FBD40E10090C235 /* ValidationError.swift in Sources */,
 				095AC3881FBD1A8E0090C235 /* RegisterViewController.swift in Sources */,
 				091A714E1FBE839200DDB9F7 /* TimelineViewController.swift in Sources */,
+				0943559A2007388D00A16681 /* ViewImageViewController.swift in Sources */,
 				A16778271FEB5DFC0045E890 /* BaseViewController.swift in Sources */,
 				097A060B1FF207DA005610B0 /* ProfileCollectionViewCell.swift in Sources */,
 				A16778611FEB65BE0045E890 /* DeviceManager.swift in Sources */,
