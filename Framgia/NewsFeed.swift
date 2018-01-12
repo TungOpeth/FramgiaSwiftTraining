@@ -95,7 +95,7 @@ class NewsFeed{
         getImageURLs(numberOfImages: self._numberOfPreviewImages, previewImagesJSON: previewImagesJSON)
     }
     
-    class func downloadNewsFeeds(completed: @escaping DownloadComplete){
+    class func downloadNewsFeeds(completed: @escaping CompleteBlock){
         let url = URL(string: NEWS_FEED_URL)!
         
         var newsFeeds: [NewsFeed] = []

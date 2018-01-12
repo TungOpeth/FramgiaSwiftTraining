@@ -40,7 +40,7 @@ class FeedCollectionViewCell: BaseCollectionViewCell {
         return CGSize(width:  DeviceManager.getWinSize().width, height: 300)
     }
     
-    override func configCell(_ item: AnyObject) {
+    override func configCell(_ item: AnyObject?) {
         if let feed = item as? NewsFeed {
             userName.text = feed.userName
             content.text = feed.content
