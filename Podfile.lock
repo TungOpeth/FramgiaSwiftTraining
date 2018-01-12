@@ -1,5 +1,11 @@
 PODS:
   - Alamofire (4.6.0)
+  - ImageSlideshow (1.0.0):
+    - ImageSlideshow/Core (= 1.0.0)
+  - ImageSlideshow/Core (1.0.0)
+  - ImageSlideshow/SDWebImage (1.0.0):
+    - ImageSlideshow/Core
+    - SDWebImage (~> 3.7)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -10,16 +16,19 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - ImageSlideshow (~> 1.0.0)
+  - ImageSlideshow/SDWebImage
   - MagicalRecord
   - SDWebImage (~> 3.8)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  ImageSlideshow: 2787e10e202b79ecf5348a205c539fcc5bb8e62b
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 5e436fdb47c5f6fde6aa3936c9a8a788ff39cb3a
+PODFILE CHECKSUM: af65e5cab1b5dd2e7a53a541f91e6bd44163ca86
 
 COCOAPODS: 1.3.1

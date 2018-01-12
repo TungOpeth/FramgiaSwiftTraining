@@ -24,18 +24,18 @@ class CommentCollectionViewCell: BaseCollectionViewCell {
         return CGSize (width: DeviceManager.getWinSize().width, height: 165)
     }
     
-    
-    override class func getSizeWithItem(withItem item: AnyObject) -> CGSize {
-                if let comment = item as? Comment {
-                    let des = comment.content
-        
-                    let messageHeight = des.height(withConstrainedWidth: DeviceManager.getWinSize().width - 40, font: UIFont.systemFont(ofSize: 17))
-        
-                    let height = 144  +  messageHeight
-                    return CGSize (width: DeviceManager.getWinSize().width, height: height )
-                }
-        return CGSize(width:  DeviceManager.getWinSize().width, height: 300)
-    }
+//    
+//    override class func getSizeWithItem(withItem item: AnyObject) -> CGSize {
+//                if let comment = item as? Comment {
+//                    let des = comment.content
+//        
+//                    let messageHeight = des.height(withConstrainedWidth: DeviceManager.getWinSize().width - 40, font: UIFont.systemFont(ofSize: 15))
+//        
+//                    let height = 90  +  messageHeight
+//                    return CGSize (width: DeviceManager.getWinSize().width, height: height )
+//                }
+//        return CGSize(width:  DeviceManager.getWinSize().width, height: 300)
+//    }
     
     override func configCell(_ item: AnyObject) {
         if let comment = item as? Comment {

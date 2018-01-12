@@ -299,6 +299,40 @@
             </objects>
             <point key="canvasLocation" x="1716" y="-1172"/>
         </scene>
+        <!--View Image View Controller-->
+        <scene sceneID="5Md-Fn-Fv4">
+            <objects>
+                <viewController storyboardIdentifier="ViewImageViewController" id="JVg-ij-q8P" customClass="ViewImageViewController" customModule="Framgia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xyz-0B-hGi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q9J-21-9LG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ca9-FZ-fI7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgt-4h-tbV" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="35" width="320" height="513"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q9J-21-9LG" firstAttribute="top" secondItem="Hgt-4h-tbV" secondAttribute="bottom" constant="13" id="7ez-ik-Fps"/>
+                            <constraint firstAttribute="trailing" secondItem="Hgt-4h-tbV" secondAttribute="trailing" id="WEl-ue-HIo"/>
+                            <constraint firstItem="Hgt-4h-tbV" firstAttribute="top" secondItem="Xyz-0B-hGi" secondAttribute="bottom" constant="34" id="pLE-tt-Fdw"/>
+                            <constraint firstItem="Hgt-4h-tbV" firstAttribute="leading" secondItem="Ca9-FZ-fI7" secondAttribute="leading" id="pvt-g1-dmf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slideShow" destination="Hgt-4h-tbV" id="9od-lD-1y1"/>
+                    </connections>
+                </viewController>
+                <navigationItem id="AyO-IE-Ii4"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdo-gX-iYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2527.5" y="-1173.5915492957747"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="OwJ-p3-NM9">
             <objects>
