@@ -9,6 +9,9 @@
 import UIKit
 
 class BaseCollectionViewCell: UICollectionViewCell {
+    
+    open var indexPath : IndexPath?
+    
     class func getSize() -> CGSize {
         return CGSize(width: 50, height: 50)
     }
@@ -17,7 +20,7 @@ class BaseCollectionViewCell: UICollectionViewCell {
         return CGSize(width: 50, height: 50)
     }
     
-    func configCell(_ item: AnyObject)  {}
+    func configCell(_ item: AnyObject?)  {}
     
     class func getIdentify() -> String {
         return String(describing: self)

@@ -37,7 +37,7 @@ class CommentCollectionViewCell: BaseCollectionViewCell {
 //        return CGSize(width:  DeviceManager.getWinSize().width, height: 300)
 //    }
     
-    override func configCell(_ item: AnyObject) {
+    override func configCell(_ item: AnyObject?) {
         if let comment = item as? Comment {
             userNameLbl.text = comment.userName
             contentLbl.text = comment.content

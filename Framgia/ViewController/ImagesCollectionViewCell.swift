@@ -73,7 +73,7 @@ class ImagesCollectionViewCell: BaseCollectionViewCell {
         return CGSize(width:  DeviceManager.getWinSize().width, height: 500)
     }
     
-    override func configCell(_ item: AnyObject) {
+    override func configCell(_ item: AnyObject?) {
         if let feed = item as? NewsFeed {
             newsfeed = feed
             

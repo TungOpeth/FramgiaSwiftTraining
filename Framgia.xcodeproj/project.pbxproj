@@ -45,6 +45,20 @@
 		097A06151FF37DDB005610B0 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097A06131FF37DDB005610B0 /* FeedCollectionViewCell.swift */; };
 		097A06161FF37DDB005610B0 /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097A06141FF37DDB005610B0 /* FeedCollectionViewCell.xib */; };
 		44CD9CDC6DB27F8C4D66C9A1 /* Pods_Framgia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D17A53A66CF132E6E7A8AFF /* Pods_Framgia.framework */; };
+		6C07C4C82008F53400DB32BA /* BaseHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4C62008F53400DB32BA /* BaseHeaderCollectionView.swift */; };
+		6C07C4C92008F53400DB32BA /* BaseColletionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4C72008F53400DB32BA /* BaseColletionController.swift */; };
+		6C07C4CB2008F58A00DB32BA /* EnumConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4CA2008F58A00DB32BA /* EnumConfig.swift */; };
+		6C07C4CD2008F59A00DB32BA /* BlockConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4CC2008F59A00DB32BA /* BlockConfig.swift */; };
+		6C07C4CF2008F5D900DB32BA /* MTTableViewPullRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4CE2008F5D900DB32BA /* MTTableViewPullRefresh.swift */; };
+		6C07C4DA2008F5FC00DB32BA /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D22008F5FC00DB32BA /* blackArrow.png */; };
+		6C07C4DB2008F5FC00DB32BA /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D32008F5FC00DB32BA /* blackArrow@2x.png */; };
+		6C07C4DC2008F5FC00DB32BA /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D42008F5FC00DB32BA /* blueArrow.png */; };
+		6C07C4DD2008F5FC00DB32BA /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D52008F5FC00DB32BA /* blueArrow@2x.png */; };
+		6C07C4DE2008F5FC00DB32BA /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D62008F5FC00DB32BA /* grayArrow.png */; };
+		6C07C4DF2008F5FC00DB32BA /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D72008F5FC00DB32BA /* grayArrow@2x.png */; };
+		6C07C4E02008F5FC00DB32BA /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D82008F5FC00DB32BA /* whiteArrow.png */; };
+		6C07C4E12008F5FC00DB32BA /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C07C4D92008F5FC00DB32BA /* whiteArrow@2x.png */; };
+		6C07C4E32008F70900DB32BA /* TimeLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4E22008F70900DB32BA /* TimeLineController.swift */; };
 		A11705CD1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11705CC1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift */; };
 		A16778271FEB5DFC0045E890 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778261FEB5DFB0045E890 /* BaseViewController.swift */; };
 		A167782B1FEB5E450045E890 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16778281FEB5E440045E890 /* NavigationBarView.swift */; };
@@ -110,6 +124,20 @@
 		097A06111FF34201005610B0 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		097A06131FF37DDB005610B0 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		097A06141FF37DDB005610B0 /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		6C07C4C62008F53400DB32BA /* BaseHeaderCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHeaderCollectionView.swift; sourceTree = "<group>"; };
+		6C07C4C72008F53400DB32BA /* BaseColletionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseColletionController.swift; sourceTree = "<group>"; };
+		6C07C4CA2008F58A00DB32BA /* EnumConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumConfig.swift; sourceTree = "<group>"; };
+		6C07C4CC2008F59A00DB32BA /* BlockConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockConfig.swift; sourceTree = "<group>"; };
+		6C07C4CE2008F5D900DB32BA /* MTTableViewPullRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTableViewPullRefresh.swift; sourceTree = "<group>"; };
+		6C07C4D22008F5FC00DB32BA /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		6C07C4D32008F5FC00DB32BA /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		6C07C4D42008F5FC00DB32BA /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		6C07C4D52008F5FC00DB32BA /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		6C07C4D62008F5FC00DB32BA /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		6C07C4D72008F5FC00DB32BA /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		6C07C4D82008F5FC00DB32BA /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		6C07C4D92008F5FC00DB32BA /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		6C07C4E22008F70900DB32BA /* TimeLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineController.swift; sourceTree = "<group>"; };
 		8CA5EE461EFBA8872FE072EB /* Pods-Framgia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Framgia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Framgia/Pods-Framgia.release.xcconfig"; sourceTree = "<group>"; };
 		8D17A53A66CF132E6E7A8AFF /* Pods_Framgia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Framgia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11705CC1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+initialApplication.swift"; sourceTree = "<group>"; };
@@ -282,6 +310,40 @@
 			name = MoreViewController;
 			sourceTree = "<group>";
 		};
+		6C07C4C52008F51600DB32BA /* BaseCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C07C4D02008F5E500DB32BA /* MTPullRefreshResource */,
+				6C07C4CE2008F5D900DB32BA /* MTTableViewPullRefresh.swift */,
+				6C07C4C62008F53400DB32BA /* BaseHeaderCollectionView.swift */,
+				6C07C4C72008F53400DB32BA /* BaseColletionController.swift */,
+			);
+			name = BaseCollectionViewController;
+			sourceTree = "<group>";
+		};
+		6C07C4D02008F5E500DB32BA /* MTPullRefreshResource */ = {
+			isa = PBXGroup;
+			children = (
+				6C07C4D12008F5FC00DB32BA /* MTPullRefresh */,
+			);
+			name = MTPullRefreshResource;
+			sourceTree = "<group>";
+		};
+		6C07C4D12008F5FC00DB32BA /* MTPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				6C07C4D22008F5FC00DB32BA /* blackArrow.png */,
+				6C07C4D32008F5FC00DB32BA /* blackArrow@2x.png */,
+				6C07C4D42008F5FC00DB32BA /* blueArrow.png */,
+				6C07C4D52008F5FC00DB32BA /* blueArrow@2x.png */,
+				6C07C4D62008F5FC00DB32BA /* grayArrow.png */,
+				6C07C4D72008F5FC00DB32BA /* grayArrow@2x.png */,
+				6C07C4D82008F5FC00DB32BA /* whiteArrow.png */,
+				6C07C4D92008F5FC00DB32BA /* whiteArrow@2x.png */,
+			);
+			path = MTPullRefresh;
+			sourceTree = "<group>";
+		};
 		7C9CB00B50963599B15AAD05 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +381,7 @@
 		A16778241FEB5DDE0045E890 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				6C07C4C52008F51600DB32BA /* BaseCollectionViewController */,
 				A16778751FEB72790045E890 /* BasePageViewController */,
 				A167786D1FEB69A10045E890 /* BaseNaviController */,
 				A167786A1FEB67100045E890 /* BaseUIView */,
@@ -376,6 +439,8 @@
 		A167785D1FEB64DE0045E890 /* SystemConfig */ = {
 			isa = PBXGroup;
 			children = (
+				6C07C4CC2008F59A00DB32BA /* BlockConfig.swift */,
+				6C07C4CA2008F58A00DB32BA /* EnumConfig.swift */,
 				A16778601FEB65BE0045E890 /* DeviceManager.swift */,
 				A167785E1FEB64EF0045E890 /* Constant.swift */,
 			);
@@ -420,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				091A714D1FBE839200DDB9F7 /* TimelineViewController.swift */,
+				6C07C4E22008F70900DB32BA /* TimeLineController.swift */,
 			);
 			path = TimeLineViewController;
 			sourceTree = "<group>";
@@ -555,12 +621,20 @@
 				09163B671FFF1BA700AE5874 /* ImageCollectionViewCell.xib in Resources */,
 				095AC3841FBC37440090C235 /* textfield_bg@2x.png in Resources */,
 				A167782D1FEB5E450045E890 /* SearchNavigationBarView.xib in Resources */,
+				6C07C4DC2008F5FC00DB32BA /* blueArrow.png in Resources */,
 				A16778691FEB66FF0045E890 /* TabbarView.xib in Resources */,
 				09163B742004995700AE5874 /* CommentCollectionViewCell.xib in Resources */,
+				6C07C4E12008F5FC00DB32BA /* whiteArrow@2x.png in Resources */,
 				095AC3821FBC37440090C235 /* login_button@2x.png in Resources */,
 				095AC36D1FBC33270090C235 /* Main.storyboard in Resources */,
+				6C07C4DE2008F5FC00DB32BA /* grayArrow.png in Resources */,
+				6C07C4E02008F5FC00DB32BA /* whiteArrow.png in Resources */,
+				6C07C4DD2008F5FC00DB32BA /* blueArrow@2x.png in Resources */,
+				6C07C4DA2008F5FC00DB32BA /* blackArrow.png in Resources */,
+				6C07C4DF2008F5FC00DB32BA /* grayArrow@2x.png in Resources */,
 				095AC3801FBC37440090C235 /* add_photo@2x.png in Resources */,
 				097A06161FF37DDB005610B0 /* FeedCollectionViewCell.xib in Resources */,
+				6C07C4DB2008F5FC00DB32BA /* blackArrow@2x.png in Resources */,
 				A167782C1FEB5E450045E890 /* NavigationBarView.xib in Resources */,
 				09163B5F1FFF18B800AE5874 /* ImagesCollectionViewCell.xib in Resources */,
 				095AC3811FBC37440090C235 /* bg@2x.png in Resources */,
@@ -640,9 +714,12 @@
 				097A06081FF1088D005610B0 /* MoreViewController.swift in Sources */,
 				09163B6D20034CD400AE5874 /* ReadMoreViewController.swift in Sources */,
 				095AC3901FBD423D0090C235 /* ValidationManager.swift in Sources */,
+				6C07C4E32008F70900DB32BA /* TimeLineController.swift in Sources */,
 				097A06151FF37DDB005610B0 /* FeedCollectionViewCell.swift in Sources */,
+				6C07C4CD2008F59A00DB32BA /* BlockConfig.swift in Sources */,
 				09163B70200474C600AE5874 /* Comment.swift in Sources */,
 				A167786C1FEB671C0045E890 /* BaseUIView.swift in Sources */,
+				6C07C4CB2008F58A00DB32BA /* EnumConfig.swift in Sources */,
 				097A060F1FF247D9005610B0 /* StatusCollectionViewCell.swift in Sources */,
 				097A06051FF0DBB7005610B0 /* ProfileViewController.swift in Sources */,
 				A167786F1FEB69B50045E890 /* BaseNaviController.swift in Sources */,
@@ -661,6 +738,8 @@
 				A16778271FEB5DFC0045E890 /* BaseViewController.swift in Sources */,
 				097A060B1FF207DA005610B0 /* ProfileCollectionViewCell.swift in Sources */,
 				A16778611FEB65BE0045E890 /* DeviceManager.swift in Sources */,
+				6C07C4CF2008F5D900DB32BA /* MTTableViewPullRefresh.swift in Sources */,
+				6C07C4C82008F53400DB32BA /* BaseHeaderCollectionView.swift in Sources */,
 				097A06121FF34201005610B0 /* BaseCollectionViewCell.swift in Sources */,
 				09163B651FFF1B9B00AE5874 /* ImageCollectionViewCell.swift in Sources */,
 				A11705CD1FEB58DD004B2F29 /* AppDelegate+initialApplication.swift in Sources */,
@@ -669,6 +748,7 @@
 				A167785F1FEB64EF0045E890 /* Constant.swift in Sources */,
 				A16778411FEB5E8D0045E890 /* GaiTrackManager.m in Sources */,
 				095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */,
+				6C07C4C92008F53400DB32BA /* BaseColletionController.swift in Sources */,
 				A1B590A31FEB4E9700276C3B /* MainViewController.swift in Sources */,
 				09163B5D1FFF18AB00AE5874 /* ImagesCollectionViewCell.swift in Sources */,
 				090B7B041FFB7E93008D0795 /* Constants.swift in Sources */,

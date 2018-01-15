@@ -60,7 +60,7 @@ class ImageCollectionViewCell: BaseCollectionViewCell {
 
     }
     
-    override func configCell(_ item: AnyObject) {
+    override func configCell(_ item: AnyObject?) {
         if let feed = item as? NewsFeed {
             
             newsfeed = feed
