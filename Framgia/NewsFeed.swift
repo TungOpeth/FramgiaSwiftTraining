@@ -118,6 +118,30 @@ class NewsFeed{
         }
     }
     
+    class func LoadMoreNewsFeeds(completed: @escaping CompleteBlock, startIndex: Int){
+        let url = URL(string: LOAD_MORE_NEWS_FEED_URL + "start=\(startIndex)&limit=20")!
+        
+        var newsFeeds: [NewsFeed] = []
+        
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).downloadProgress { (progress) in
+            
+            }.responseJSON { (response) in
+                if((response.result.value) != nil) {
+                    let swiftyJsonVar = JSON(response.result.value!)
+                    if let datas = swiftyJsonVar["data"].array {
+                        for case let data in datas {
+                            if let newsFeed = NewsFeed(json: data.dictionaryValue){
+                                newsFeeds.append(newsFeed)
+                            }
+                        }
+                    }
+                    
+                    completed(newsFeeds)
+                }
+        }
+    }
+    
+    
     private func getImageURLs(numberOfImages: Int, previewImagesJSON: String) {
         if let list = self.convertToDictionary(text: previewImagesJSON) as? [NSDictionary] {
             images = list

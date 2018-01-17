@@ -89,7 +89,7 @@ class BaseCollectionController: NSObject,UICollectionViewDelegate {
         items.append(listitem)
         _targetCollectionView?.reloadData()
     }
-
+    
     func updateWithListItem(_ listitem: [[AnyObject]], listSection:[AnyObject]){
         items.removeAll()
         items += listitem
@@ -100,8 +100,14 @@ class BaseCollectionController: NSObject,UICollectionViewDelegate {
     
     // Update entity of section
     func addEntityForSection(newItem _newItem:[AnyObject], atSection section:Int) {
+        let lastItem = self.items[section].last
+        if lastItem is String {
+            self.items[section].removeLast()
+        }
         self.items[section].append(contentsOf: _newItem)
+        
         _targetCollectionView?.reloadData()
+        tableState = .Normal
     }
 
     func reloadCollectionView() {
@@ -120,7 +126,12 @@ class BaseCollectionController: NSObject,UICollectionViewDelegate {
         _targetCollectionView?.addSubview(self.refreshHeaderView)
     }
     
-    func loadMoreContent() {}
+    func loadMoreContent(startIndex: Int) {
+        var listItems = getListItem(sectionIndex: 0)
+        listItems.append("loading" as AnyObject)
+        self.updateWithListItem(listItems)
+        
+    }
     
     
     //MARK: MT refresh header protocol
@@ -129,6 +140,7 @@ class BaseCollectionController: NSObject,UICollectionViewDelegate {
         if let tartgetCollection = _targetCollectionView {
             refreshHeaderView.egoRefreshScrollViewDataSourceDidFinishedLoading(tartgetCollection)
         }
+        tableState = .Normal
     }
     
     //MARK: Require Override function
@@ -153,9 +165,9 @@ class BaseCollectionController: NSObject,UICollectionViewDelegate {
 
 extension BaseCollectionController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.row > collectionView.numberOfItems(inSection: 0)  - 6 {
+        if indexPath.row == collectionView.numberOfItems(inSection: 0) - 1 {
             if tableState == .Normal {
-                loadMoreContent()
+                loadMoreContent(startIndex: collectionView.numberOfItems(inSection: 0))
             }
         }
         let item = self.itemAtIndexPath(indexPath)
@@ -203,6 +215,9 @@ extension BaseCollectionController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellClass = self.getCellClass(indexPath)
+        if let item = itemAtIndexPath(indexPath) {
+            return cellClass.getSizeWithItem(withItem: item)
+        }
         return cellClass.getSize()
     }
     
