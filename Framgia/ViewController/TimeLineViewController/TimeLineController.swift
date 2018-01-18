@@ -9,6 +9,7 @@
 import UIKit
 
 class TimeLineController: BaseCollectionController {
+    
     convenience init(initWithTargetCollection _targetCollection:UICollectionView) {
         self.init()
         self.initWithTargetCollectionView(_targetCollection)
@@ -27,6 +28,14 @@ class TimeLineController: BaseCollectionController {
         })
     }
     
+    override func loadMoreContent(startIndex: Int) {
+        self.tableState = .LoadingMore
+        super.loadMoreContent(startIndex: startIndex)
+        NewsFeed.LoadMoreNewsFeeds(completed: { (items) in
+            self.addEntityForSection(newItem: items, atSection: 0)
+        }, startIndex: startIndex)
+    }
+    
     override func registerNibWithColletion(_ collectionView: UICollectionView) {
         collectionView.register(ProfileCollectionViewCell.getNib(), forCellWithReuseIdentifier: ProfileCollectionViewCell.getIdentify())
         
@@ -37,6 +46,8 @@ class TimeLineController: BaseCollectionController {
         collectionView.register(ImagesCollectionViewCell.getNib(), forCellWithReuseIdentifier: ImagesCollectionViewCell.getIdentify())
         
         collectionView.register(ImageCollectionViewCell.getNib(), forCellWithReuseIdentifier: ImageCollectionViewCell.getIdentify())
+        
+        collectionView.register(LoadingCollectionViewCell.getNib(), forCellWithReuseIdentifier: LoadingCollectionViewCell.getIdentify())
     }
     
     override func getCellIndenifi(_ item: AnyObject?, returnNameClass: Bool) -> String {
@@ -57,6 +68,12 @@ class TimeLineController: BaseCollectionController {
                 return ImageCollectionViewCell.getIdentify()
             } else {
                 return FeedCollectionViewCell.getIdentify()
+            }
+        } else if item is String {
+            if returnNameClass {
+                return NSStringFromClass(LoadingCollectionViewCell.self)
+            } else {
+                return LoadingCollectionViewCell.getIdentify()
             }
         }
         return FeedCollectionViewCell.getIdentify()

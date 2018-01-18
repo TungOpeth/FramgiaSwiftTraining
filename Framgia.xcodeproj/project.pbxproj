@@ -44,6 +44,8 @@
 		097A06121FF34201005610B0 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097A06111FF34201005610B0 /* BaseCollectionViewCell.swift */; };
 		097A06151FF37DDB005610B0 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097A06131FF37DDB005610B0 /* FeedCollectionViewCell.swift */; };
 		097A06161FF37DDB005610B0 /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097A06141FF37DDB005610B0 /* FeedCollectionViewCell.xib */; };
+		09D720E3200DDD6000B07BC3 /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D720E1200DDD6000B07BC3 /* LoadingCollectionViewCell.swift */; };
+		09D720E4200DDD6000B07BC3 /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D720E2200DDD6000B07BC3 /* LoadingCollectionViewCell.xib */; };
 		44CD9CDC6DB27F8C4D66C9A1 /* Pods_Framgia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D17A53A66CF132E6E7A8AFF /* Pods_Framgia.framework */; };
 		6C07C4C82008F53400DB32BA /* BaseHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4C62008F53400DB32BA /* BaseHeaderCollectionView.swift */; };
 		6C07C4C92008F53400DB32BA /* BaseColletionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07C4C72008F53400DB32BA /* BaseColletionController.swift */; };
@@ -124,6 +126,8 @@
 		097A06111FF34201005610B0 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		097A06131FF37DDB005610B0 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		097A06141FF37DDB005610B0 /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		09D720E1200DDD6000B07BC3 /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		09D720E2200DDD6000B07BC3 /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
 		6C07C4C62008F53400DB32BA /* BaseHeaderCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHeaderCollectionView.swift; sourceTree = "<group>"; };
 		6C07C4C72008F53400DB32BA /* BaseColletionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseColletionController.swift; sourceTree = "<group>"; };
 		6C07C4CA2008F58A00DB32BA /* EnumConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumConfig.swift; sourceTree = "<group>"; };
@@ -308,6 +312,15 @@
 				097A06071FF1088D005610B0 /* MoreViewController.swift */,
 			);
 			name = MoreViewController;
+			sourceTree = "<group>";
+		};
+		09D720E0200DDCEB00B07BC3 /* LoadingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				09D720E1200DDD6000B07BC3 /* LoadingCollectionViewCell.swift */,
+				09D720E2200DDD6000B07BC3 /* LoadingCollectionViewCell.xib */,
+			);
+			name = LoadingViewController;
 			sourceTree = "<group>";
 		};
 		6C07C4C52008F51600DB32BA /* BaseCollectionViewController */ = {
@@ -509,6 +522,7 @@
 		A1B5909D1FEB409A00276C3B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				09D720E0200DDCEB00B07BC3 /* LoadingViewController */,
 				09435598200720E800A16681 /* ViewImageViewController */,
 				09163B6A20034C8C00AE5874 /* ReadMoreViewController */,
 				097A06061FF10878005610B0 /* MoreViewController */,
@@ -636,6 +650,7 @@
 				097A06161FF37DDB005610B0 /* FeedCollectionViewCell.xib in Resources */,
 				6C07C4DB2008F5FC00DB32BA /* blackArrow@2x.png in Resources */,
 				A167782C1FEB5E450045E890 /* NavigationBarView.xib in Resources */,
+				09D720E4200DDD6000B07BC3 /* LoadingCollectionViewCell.xib in Resources */,
 				09163B5F1FFF18B800AE5874 /* ImagesCollectionViewCell.xib in Resources */,
 				095AC3811FBC37440090C235 /* bg@2x.png in Resources */,
 			);
@@ -746,6 +761,7 @@
 				09163B732004995700AE5874 /* CommentCollectionViewCell.swift in Sources */,
 				095AC36A1FBC33270090C235 /* ViewController.swift in Sources */,
 				A167785F1FEB64EF0045E890 /* Constant.swift in Sources */,
+				09D720E3200DDD6000B07BC3 /* LoadingCollectionViewCell.swift in Sources */,
 				A16778411FEB5E8D0045E890 /* GaiTrackManager.m in Sources */,
 				095AC3681FBC33270090C235 /* AppDelegate.swift in Sources */,
 				6C07C4C92008F53400DB32BA /* BaseColletionController.swift in Sources */,
